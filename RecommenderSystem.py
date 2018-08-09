@@ -175,7 +175,7 @@ class RecommenderSystem():
             #**************************
             #Softmax
             if(classifier=='softmax'):
-                self.classificationLayer = tf.layers.dense(inputs=self.dynamicFeatureExtractionLayer,activation=None,units=50,kernel_initializer=tf.contrib.layers.xavier_initializer(),activity_regularizer=tf.contrib.layers.l2_regularizer(0.001))
+                self.classificationLayer = tf.layers.dense(inputs=self.dynamicFeatureExtractionLayer,activation=None,units=10,kernel_initializer=tf.contrib.layers.xavier_initializer(),activity_regularizer=tf.contrib.layers.l2_regularizer(0.001))
 
             #Kernel Softmax
             elif(classifier=='kernel'):
